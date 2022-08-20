@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Selector</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <h1>Top Movies Selector</h1>
+    <form action="http://localhost:3000/Movie" method="get">
+        <label for="genre">Pick a Genre:</label>
+        <select name="genre" id ="genre">
+            <option value="Drama">Drama</option>
+            <option value="Action">Action</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Family">Family</option>
+            <option value="Sci-Fi">Sci-Fi</option>
+        </select>
+        <input type="submit" value="submit">
+    </form>
+    <br>
+    <form action="http://localhost:3000/Random" method="get">
+        <label for="random">Or Pick a Random Movie</label>
+        <button name="random" type="submit" id ="random">Random Movie</button>
+    </form>
+    <br>
+    <!--
+    <h2>Add a New Movie to the Database:</h2>
+    <form action="http://localhost:3000/update" method="post">
+        <label for="genre">Genre of new movie:</label>
+        <select name="genre" id ="genre">
+            <option value="Drama">Drama</option>
+            <option value="Action">Action</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Family">Family</option>
+            <option value="Sci-Fi">Sci-Fi</option>
+        </select>
+        <br>
+        <label for="movie">Title of new movie:</label>
+        <input type="text" name="movie">
+        <br>
+        <label for="director">Who is the director:</label>
+        <input type="text" name="director">
+        <br>
+        <input type="submit" value="submit">
+    </form>
+-->
+</body>
+</html>
